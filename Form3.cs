@@ -244,13 +244,13 @@ namespace Bank
             sum_poz = 6573;
             if (maskedTextBox3.Text == "               " || maskedTextBox7.Text == "" || maskedTextBox4.Text == "" || maskedTextBox4.Text == "" || maskedTextBox5.Text == "" || maskedTextBox6.Text == "")
             {
-                MessageBox.Show("Проверьте введенные данные", "Ошибка ввода");
+                MessageBox.Show("Проверьте введенные данные", "Ошибка ввода", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
                 if (Convert.ToInt32(textBox1.Text) < Convert.ToInt32(maskedTextBox7.Text))
                 {
-                    MessageBox.Show("Сумма платежа не может быть больше суммы кредита", "Ошибка ввода");
+                    MessageBox.Show("Сумма платежа не может быть больше суммы кредита", "Ошибка ввода", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     maskedTextBox7.Clear();
                 }
                 else
@@ -260,7 +260,7 @@ namespace Bank
                     //проверка срока действия карты
                     if (Convert.ToInt32(date) < Convert.ToInt32(now_date))
                     {
-                        MessageBox.Show("Срок действия карты истек");
+                        MessageBox.Show("Срок действия карты истек","Информация", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
                     {
@@ -273,7 +273,7 @@ namespace Bank
                         int credit_t = Convert.ToInt32(dataGridView1[4, k].Value);
                         credit_t -= Convert.ToInt32(maskedTextBox7.Text);
                         dataGridView1[4, k].Value = Convert.ToString(credit_t);
-                        MessageBox.Show("Оплата произведена успешно");
+                        MessageBox.Show("Оплата произведена успешно","Оплата", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         maskedTextBox3.Clear();
                         maskedTextBox4.Clear();
                         maskedTextBox5.Clear();

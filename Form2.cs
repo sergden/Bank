@@ -203,11 +203,9 @@ namespace Bank
 
         private void Button2_Click(object sender, EventArgs e) //кнопка "Ввод"
         {
-            // dataGridView1.RowCount++;
-
             if (maskedTextBox5.Text == "" || maskedTextBox1.Text == " , ," || maskedTextBox2.Text == "" || maskedTextBox3.Text == "" || maskedTextBox4.Text == "" || maskedTextBox6.Text == "" || Convert.ToInt32(maskedTextBox5.Text) > Convert.ToInt32(maskedTextBox6.Text))
             {
-                MessageBox.Show("Проверьте введенные данные", "Ошибка ввода");
+                MessageBox.Show("Проверьте введенные данные", "Ошибка ввода", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
