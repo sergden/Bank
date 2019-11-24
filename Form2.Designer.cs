@@ -834,7 +834,7 @@
             // опрограммеToolStripMenuItem
             // 
             this.опрограммеToolStripMenuItem.Name = "опрограммеToolStripMenuItem";
-            this.опрограммеToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.опрограммеToolStripMenuItem.Size = new System.Drawing.Size(196, 26);
             this.опрограммеToolStripMenuItem.Text = "&О программе...";
             this.опрограммеToolStripMenuItem.Click += new System.EventHandler(this.опрограммеToolStripMenuItem_Click);
             // 
@@ -851,7 +851,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(147, 26);
             this.dateTimePicker1.TabIndex = 10;
-            this.dateTimePicker1.Value = new System.DateTime(2019, 11, 13, 0, 0, 0, 0);
+            this.dateTimePicker1.Value = new System.DateTime(2019, 11, 24, 0, 0, 0, 0);
             this.dateTimePicker1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dateTimePicker1_KeyPress_1);
             // 
             // button2
