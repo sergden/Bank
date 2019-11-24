@@ -75,11 +75,12 @@ namespace Bank
             textBox2.Text = Convert.ToString(dateTimePicker2.Text); //текущая дата
             for (int i = 0; i < dataGridView1.RowCount; i++)
             {
-                if (Convert.ToString(userNameToolStripMenuItem.Text) == Convert.ToString(dataGridView1[0, i].Value))
+                if (Convert.ToString(toolStripMenuItem2.Text) == Convert.ToString(dataGridView1[2, i].Value))
                 {
-                    textBox1.Text = Convert.ToString(dataGridView1[4, i].Value);
-                    toolStripMenuItem2.Text = Convert.ToString(dataGridView1[2, i].Value);
-                    toolStripMenuItem1.Text = Convert.ToString(dataGridView1[1, i].Value);
+                    textBox1.Text = Convert.ToString(dataGridView1[4, i].Value); //сумма кредита
+                    textBox4.Text = Convert.ToString(dataGridView1[3, i].Value); //сумма на счету
+                    userNameToolStripMenuItem.Text = Convert.ToString(dataGridView1[0, i].Value);//фамилия
+                    toolStripMenuItem1.Text = Convert.ToString(dataGridView1[1, i].Value);//филиал
                     k = (byte)(i);
                 }
             }

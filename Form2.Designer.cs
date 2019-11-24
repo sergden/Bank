@@ -104,13 +104,13 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button2 = new System.Windows.Forms.Button();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -496,7 +496,7 @@
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage4.Size = new System.Drawing.Size(985, 254);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Max&Min сумма вклада";
+            this.tabPage4.Text = "Max&Min сумма на счете";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // panel4
@@ -610,9 +610,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label7.Location = new System.Drawing.Point(563, 13);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(286, 25);
+            this.label7.Size = new System.Drawing.Size(303, 25);
             this.label7.TabIndex = 4;
-            this.label7.Text = "Клиент с MIN суммой вклада";
+            this.label7.Text = "Клиент с MIN суммой на счете";
             // 
             // label6
             // 
@@ -620,9 +620,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.Location = new System.Drawing.Point(120, 3);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(295, 25);
+            this.label6.Size = new System.Drawing.Size(312, 25);
             this.label6.TabIndex = 3;
-            this.label6.Text = "Клиент с MAX суммой вклада";
+            this.label6.Text = "Клиент с MAX суммой на счете";
             // 
             // button5
             // 
@@ -879,17 +879,6 @@
             this.maskedTextBox1.TabIndex = 12;
             this.maskedTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MaskedTextBox1_KeyPress);
             // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(209, 290);
-            this.maskedTextBox2.Mask = "LLLLLLLLLLLLLLL";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.PromptChar = ' ';
-            this.maskedTextBox2.Size = new System.Drawing.Size(152, 26);
-            this.maskedTextBox2.TabIndex = 13;
-            this.maskedTextBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MaskedTextBox2_KeyPress);
-            // 
             // maskedTextBox3
             // 
             this.maskedTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -953,19 +942,34 @@
             this.pictureBox1.TabIndex = 63;
             this.pictureBox1.TabStop = false;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Южный",
+            "Северный",
+            "Западный",
+            "Восточный"});
+            this.comboBox1.Location = new System.Drawing.Point(208, 290);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(152, 26);
+            this.comboBox1.TabIndex = 64;
+            this.comboBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox1_KeyPress);
+            // 
             // Form2
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1005, 623);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.maskedTextBox6);
             this.Controls.Add(this.maskedTextBox5);
             this.Controls.Add(this.maskedTextBox4);
             this.Controls.Add(this.maskedTextBox3);
-            this.Controls.Add(this.maskedTextBox2);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dateTimePicker1);
@@ -1042,7 +1046,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
         private System.Windows.Forms.MaskedTextBox maskedTextBox3;
         private System.Windows.Forms.MaskedTextBox maskedTextBox4;
         private System.Windows.Forms.MaskedTextBox maskedTextBox5;
@@ -1086,5 +1089,6 @@
         private System.Windows.Forms.ToolStripMenuItem опрограммеToolStripMenuItem;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

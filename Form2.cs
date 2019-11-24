@@ -120,12 +120,12 @@ namespace Bank
             {
                 if (e.KeyChar == (char)Keys.Enter)
                 {
-                    maskedTextBox2.Select();
+                    comboBox1.Select();
                 }
                 return;
             }
         }
-        private void MaskedTextBox2_KeyPress(object sender, KeyPressEventArgs e)
+        private void comboBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (Char.IsControl(e.KeyChar))
             {
@@ -198,12 +198,13 @@ namespace Bank
         private void Form2_Shown(object sender, EventArgs e)
         {
             maskedTextBox6.Select();
+            dateTimePicker1.Value = DateTime.Now;
         }
         //*******************************************************************************************************************************
 
         private void Button2_Click(object sender, EventArgs e) //кнопка "Ввод"
         {
-            if (maskedTextBox5.Text == "" || maskedTextBox1.Text == " , ," || maskedTextBox2.Text == "" || maskedTextBox3.Text == "" || maskedTextBox4.Text == "" || maskedTextBox6.Text == "" || Convert.ToInt32(maskedTextBox5.Text) > Convert.ToInt32(maskedTextBox6.Text))
+            if (maskedTextBox5.Text == "" || maskedTextBox1.Text == " , ," || comboBox1.Text == "" || maskedTextBox3.Text == "" || maskedTextBox4.Text == "" || maskedTextBox6.Text == "" || Convert.ToInt32(maskedTextBox5.Text) > Convert.ToInt32(maskedTextBox6.Text))
             {
                 MessageBox.Show("Проверьте введенные данные", "Ошибка ввода", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -212,14 +213,14 @@ namespace Bank
                 dataGridView1.RowCount++;
                 dataGridView1[4, dataGridView1.RowCount - 1].Value = maskedTextBox5.Text;//кредит
                 dataGridView1[0, dataGridView1.RowCount - 1].Value = maskedTextBox1.Text;//фио
-                dataGridView1[1, dataGridView1.RowCount - 1].Value = maskedTextBox2.Text;//филиал
+                dataGridView1[1, dataGridView1.RowCount - 1].Value = comboBox1.Text;//филиал
                 dataGridView1[2, dataGridView1.RowCount - 1].Value = maskedTextBox3.Text;//номер счета
                 dataGridView1[3, dataGridView1.RowCount - 1].Value = maskedTextBox4.Text;//сумма на счете            
                 dataGridView1[5, dataGridView1.RowCount - 1].Value = dateTimePicker1.Text;//дата
             }
             //очистка TextBox'ов
             maskedTextBox1.Clear();
-            maskedTextBox2.Clear();
+            comboBox1.Text = "";
             maskedTextBox3.Clear();
             maskedTextBox4.Clear();
             maskedTextBox5.Clear();

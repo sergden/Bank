@@ -30,74 +30,74 @@ namespace Bank
                 textBox2.Clear();
                 this.Hide();
             }
-            else if (textBox1.Text == "Д.Л.Иванов" && textBox2.Text == "User")
+            else if (textBox1.Text == "636726" && textBox2.Text == "User")
             {
                 UserForm.Show();
-                UserForm.userNameToolStripMenuItem.Text = this.textBox1.Text; //передача логина на форму 3
+                UserForm.toolStripMenuItem2.Text = this.textBox1.Text; //передача логина на форму 3
                 textBox1.Clear();
                 textBox2.Clear();
                 this.Hide();
             }
-            else if (textBox1.Text == "П.Д.Семёнов" && textBox2.Text == "User")
+            else if (textBox1.Text == "636725" && textBox2.Text == "User")
             {
                 UserForm.Show();
-                UserForm.userNameToolStripMenuItem.Text = this.textBox1.Text; //передача логина на форму 3
+                UserForm.toolStripMenuItem2.Text = this.textBox1.Text; //передача логина на форму 3
                 textBox1.Clear();
                 textBox2.Clear();
                 this.Hide();
             }
-            else if (textBox1.Text == "П.П.Петров" && textBox2.Text == "User")
+            else if (textBox1.Text == "2631725" && textBox2.Text == "User")
             {
                 UserForm.Show();
-                UserForm.userNameToolStripMenuItem.Text = this.textBox1.Text; //передача логина на форму 3
+                UserForm.toolStripMenuItem2.Text = this.textBox1.Text; //передача логина на форму 3
                 textBox1.Clear();
                 textBox2.Clear();
                 this.Hide();
             }
-            else if (textBox1.Text == "Ф.Х.Клён" && textBox2.Text == "User")
+            else if (textBox1.Text == "636755" && textBox2.Text == "User")
             {
                 UserForm.Show();
-                UserForm.userNameToolStripMenuItem.Text = this.textBox1.Text; //передача логина на форму 3
+                UserForm.toolStripMenuItem2.Text = this.textBox1.Text; //передача логина на форму 3
                 textBox1.Clear();
                 textBox2.Clear();
                 this.Hide();
             }
-            else if (textBox1.Text == "С.С.Яблочкин" && textBox2.Text == "User")
+            else if (textBox1.Text == "63472522" && textBox2.Text == "User")
             {
                 UserForm.Show();
-                UserForm.userNameToolStripMenuItem.Text = this.textBox1.Text; //передача логина на форму 3
+                UserForm.toolStripMenuItem2.Text = this.textBox1.Text; //передача логина на форму 3
                 textBox1.Clear();
                 textBox2.Clear();
                 this.Hide();
             }
-            else if (textBox1.Text == "Г.Г.Сидоров" && textBox2.Text == "User")
+            else if (textBox1.Text == "631725" && textBox2.Text == "User")
             {
                 UserForm.Show();
-                UserForm.userNameToolStripMenuItem.Text = this.textBox1.Text; //передача логина на форму 3
+                UserForm.toolStripMenuItem2.Text = this.textBox1.Text; //передача логина на форму 3
                 textBox1.Clear();
                 textBox2.Clear();
                 this.Hide();
             }
-            else if (textBox1.Text == "Л.В.Шаманов" && textBox2.Text == "User")
+            else if (textBox1.Text == "6368745" && textBox2.Text == "User")
             {
                 UserForm.Show();
-                UserForm.userNameToolStripMenuItem.Text = this.textBox1.Text; //передача логина на форму 3
+                UserForm.toolStripMenuItem2.Text = this.textBox1.Text; //передача логина на форму 3
                 textBox1.Clear();
                 textBox2.Clear();
                 this.Hide();
             }
-            else if (textBox1.Text == "Н.Р.Петров" && textBox2.Text == "User")
+            else if (textBox1.Text == "632983425" && textBox2.Text == "User")
             {
                 UserForm.Show();
-                UserForm.userNameToolStripMenuItem.Text = this.textBox1.Text; //передача логина на форму 3
+                UserForm.toolStripMenuItem2.Text = this.textBox1.Text; //передача логина на форму 3
                 textBox1.Clear();
                 textBox2.Clear();
                 this.Hide();
             }
-            else if (textBox1.Text == "Я.М.Яковлев" && textBox2.Text == "User")
+            else if (textBox1.Text == "69283725" && textBox2.Text == "User")
             {
                 UserForm.Show();
-                UserForm.userNameToolStripMenuItem.Text = this.textBox1.Text; //передача логина на форму 3
+                UserForm.toolStripMenuItem2.Text = this.textBox1.Text; //передача логина на форму 3
                 textBox1.Clear();
                 textBox2.Clear();
                 this.Hide();
