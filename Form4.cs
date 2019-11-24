@@ -26,7 +26,7 @@ namespace Bank
         private void Form4_Shown(object sender, EventArgs e) //запись в таблицу при загрузке формы_4
         {
             //Чтение из файла
-            String myStream = @"C:\Users\DEN\Documents\VS Projects\Bank\test.txt"; //переменная подкючения к файлу
+            String myStream = @"C:\Users\DEN\Documents\VS Projects\Bank\Data\DBase.txt"; //переменная подкючения к файлу
             //переменная myReader для чтения из файла, связанная с переменной открытия
             StreamReader myReader = new StreamReader(myStream);
             string[] str;
@@ -48,7 +48,7 @@ namespace Bank
             }
             myReader.Close();//закрытие чтения
 
-            string myStream1 = @"C:\Users\DEN\Documents\VS Projects\Bank\t_vozvr.txt";
+            string myStream1 = @"C:\Users\DEN\Documents\VS Projects\Bank\Data\t_vozvr.txt";
             StreamReader myReader1 = new StreamReader(myStream1);
                sum_pozitiv = Convert.ToInt32(myReader1.ReadToEnd());
 

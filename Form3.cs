@@ -26,7 +26,7 @@ namespace Bank
         {
             Form1 PasswordForm = new Form1();
             //сохрание базы данных
-            string myStream = @"C:\Users\DEN\Documents\VS Projects\Bank\tttt.txt";//переменная для подключения к файлу
+            string myStream = @"C:\Users\DEN\Documents\VS Projects\Bank\Data\DBase.txt";//переменная для подключения к файлу
             StreamWriter myWritet = new StreamWriter(myStream); /*переменная myWriter нужна для записи в файл;
                     она связана с переменной, которая подключается к файлу */
             for (int i = 0; i < dataGridView1.RowCount; i++)
@@ -45,10 +45,10 @@ namespace Bank
         }
         private void Form3_Load(object sender, EventArgs e) //запись в таблицу при загрузке формы_3
         {
-            this.Height = 335;
-            this.Width = 466;
+            this.Height = 355;
+            this.Width = 536;
             //Чтение из файла
-            String myStream = @"C:\Users\DEN\Documents\VS Projects\Bank\test.txt"; //переменная подкючения к файлу
+            String myStream = @"C:\Users\DEN\Documents\VS Projects\Bank\Data\DBase.txt"; //переменная подкючения к файлу
             //переменная myReader для чтения из файла, связанная с переменной открытия
             StreamReader myReader = new StreamReader(myStream);
             string[] str;
@@ -84,7 +84,7 @@ namespace Bank
                     k = (byte)(i);
                 }
             }
-            if (Convert.ToInt32(textBox1.Text) <= 0)
+            if (Convert.ToInt32(textBox1.Text) == 0)
             {
                 textBox3.Text = "0";
             }
@@ -93,7 +93,7 @@ namespace Bank
         //********************************************************оплата наличными**************************************************
         private void button2_Click(object sender, EventArgs e) //наличные
         {
-            this.Height = 335;
+            this.Height = 355;
             radioButton4.Visible = Convert.ToBoolean(1);
             radioButton5.Visible = Convert.ToBoolean(1);
             radioButton6.Visible = Convert.ToBoolean(1);
@@ -102,6 +102,8 @@ namespace Bank
             label13.Visible = Convert.ToBoolean(1);
             maskedTextBox1.Visible = Convert.ToBoolean(1);
             maskedTextBox2.Visible = Convert.ToBoolean(1);
+            panel4.Visible = Convert.ToBoolean(1);
+            panel5.Visible = Convert.ToBoolean(1);
             OK_Cash.Visible = Convert.ToBoolean(1);
         }
         private void radioButton4_Click(object sender, EventArgs e) //оплата в рублях
@@ -159,6 +161,8 @@ namespace Bank
                     label13.Visible = Convert.ToBoolean(0);
                     maskedTextBox1.Visible = Convert.ToBoolean(0);
                     maskedTextBox2.Visible = Convert.ToBoolean(0);
+                    panel4.Visible = Convert.ToBoolean(0);
+                    panel5.Visible = Convert.ToBoolean(0);
                     OK_Cash.Visible = Convert.ToBoolean(0);
                     radioButton5.Checked = Convert.ToBoolean(0);
                 }
@@ -189,7 +193,20 @@ namespace Bank
         //*******************************************************оплата чеком********************************************************
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Height = 335;
+            this.Height = 355;
+            this.Width = 536;
+            radioButton4.Visible = Convert.ToBoolean(0);
+            radioButton5.Visible = Convert.ToBoolean(0);
+            radioButton6.Visible = Convert.ToBoolean(0);
+            label6.Visible = Convert.ToBoolean(0);
+            label7.Visible = Convert.ToBoolean(0);
+            label13.Visible = Convert.ToBoolean(0);
+            maskedTextBox1.Visible = Convert.ToBoolean(0);
+            maskedTextBox2.Visible = Convert.ToBoolean(0);
+            panel4.Visible = Convert.ToBoolean(0);
+            panel5.Visible = Convert.ToBoolean(0);
+            OK_Cash.Visible = Convert.ToBoolean(0);
+            radioButton5.Checked = Convert.ToBoolean(0);
             MessageBox.Show("Вам необходимо посетить отделение банка и предъявить расчетный банковский чек.", "Оплата", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -208,7 +225,19 @@ namespace Bank
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Height = 462;
+            this.Height = 495;
+            radioButton4.Visible = Convert.ToBoolean(0);
+            radioButton5.Visible = Convert.ToBoolean(0);
+            radioButton6.Visible = Convert.ToBoolean(0);
+            label6.Visible = Convert.ToBoolean(0);
+            label7.Visible = Convert.ToBoolean(0);
+            label13.Visible = Convert.ToBoolean(0);
+            maskedTextBox1.Visible = Convert.ToBoolean(0);
+            maskedTextBox2.Visible = Convert.ToBoolean(0);
+            panel4.Visible = Convert.ToBoolean(0);
+            panel5.Visible = Convert.ToBoolean(0);
+            OK_Cash.Visible = Convert.ToBoolean(0);
+            radioButton5.Checked = Convert.ToBoolean(0);
 
         }
         private void Pay_Click(object sender, EventArgs e) //подтверждение
@@ -252,7 +281,7 @@ namespace Bank
                         maskedTextBox6.Clear();
                         maskedTextBox7.Clear();
                         Form3_Shown(sender, e);
-                        this.Height = 335;
+                        this.Height = 355;
                     }
                 }
             }

@@ -26,82 +26,81 @@ namespace Bank
             // UserForm.Show(); MainForm.Show();
             if (textBox1.Text == "ADMIN" && textBox2.Text == "ADMIN")
             {
+                MainForm.Show();
                 textBox1.Clear();
                 textBox2.Clear();
-                MainForm.Show();
                 this.Hide();
             }
             else if (textBox1.Text == "Д.Л.Иванов" && textBox2.Text == "User")
             {
-                textBox1.Clear();
-                textBox2.Clear();
                 UserForm.Show();
                 UserForm.userNameToolStripMenuItem.Text = this.textBox1.Text; //передача логина на форму 3
+                textBox1.Clear();
+                textBox2.Clear();
                 this.Hide();
             }
             else if (textBox1.Text == "П.Д.Семёнов" && textBox2.Text == "User")
             {
-                textBox1.Clear();
-                textBox2.Clear();
                 UserForm.Show();
                 UserForm.userNameToolStripMenuItem.Text = this.textBox1.Text; //передача логина на форму 3
+                textBox1.Clear();
+                textBox2.Clear();
                 this.Hide();
             }
             else if (textBox1.Text == "П.П.Петров" && textBox2.Text == "User")
             {
-                textBox1.Clear();
-                textBox2.Clear();
                 UserForm.Show();
                 UserForm.userNameToolStripMenuItem.Text = this.textBox1.Text; //передача логина на форму 3
+                textBox1.Clear();
+                textBox2.Clear();
                 this.Hide();
             }
             else if (textBox1.Text == "Ф.Х.Клён" && textBox2.Text == "User")
             {
-                textBox1.Clear();
-                textBox2.Clear();
                 UserForm.Show();
                 UserForm.userNameToolStripMenuItem.Text = this.textBox1.Text; //передача логина на форму 3
+                textBox1.Clear();
+                textBox2.Clear();
                 this.Hide();
             }
             else if (textBox1.Text == "С.С.Яблочкин" && textBox2.Text == "User")
             {
-                textBox1.Clear();
-                textBox2.Clear();
                 UserForm.Show();
                 UserForm.userNameToolStripMenuItem.Text = this.textBox1.Text; //передача логина на форму 3
+                textBox1.Clear();
+                textBox2.Clear();
                 this.Hide();
             }
             else if (textBox1.Text == "Г.Г.Сидоров" && textBox2.Text == "User")
             {
-                textBox1.Clear();
-                textBox2.Clear();
                 UserForm.Show();
                 UserForm.userNameToolStripMenuItem.Text = this.textBox1.Text; //передача логина на форму 3
-
+                textBox1.Clear();
+                textBox2.Clear();
                 this.Hide();
             }
             else if (textBox1.Text == "Л.В.Шаманов" && textBox2.Text == "User")
             {
-                textBox1.Clear();
-                textBox2.Clear();
                 UserForm.Show();
                 UserForm.userNameToolStripMenuItem.Text = this.textBox1.Text; //передача логина на форму 3
+                textBox1.Clear();
+                textBox2.Clear();
                 this.Hide();
             }
             else if (textBox1.Text == "Н.Р.Петров" && textBox2.Text == "User")
             {
-                textBox1.Clear();
-                textBox2.Clear();
                 UserForm.Show();
                 UserForm.userNameToolStripMenuItem.Text = this.textBox1.Text; //передача логина на форму 3
+                textBox1.Clear();
+                textBox2.Clear();
                 this.Hide();
             }
             else if (textBox1.Text == "Я.М.Яковлев" && textBox2.Text == "User")
             {
-                textBox1.Clear();
-                textBox2.Clear();
                 UserForm.Show();
                 UserForm.userNameToolStripMenuItem.Text = this.textBox1.Text; //передача логина на форму 3
+                textBox1.Clear();
+                textBox2.Clear();
                 this.Hide();
             }
             else if (textBox1.Text == "SuperUser" && textBox2.Text == "SuperUser")
@@ -144,7 +143,7 @@ namespace Bank
             {
                 if (e.KeyChar == (char)Keys.Enter)
                 {
-                    button1.Select();
+                    button1.PerformClick();
                 }
                 return;
             }
