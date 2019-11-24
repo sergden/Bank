@@ -23,7 +23,6 @@ namespace Bank
 
         private void button1_Click(object sender, EventArgs e) //login
         {
-            // UserForm.Show(); MainForm.Show();
             if (textBox1.Text == "ADMIN" && textBox2.Text == "ADMIN")
             {
                 MainForm.Show();

@@ -834,8 +834,9 @@
             // опрограммеToolStripMenuItem
             // 
             this.опрограммеToolStripMenuItem.Name = "опрограммеToolStripMenuItem";
-            this.опрограммеToolStripMenuItem.Size = new System.Drawing.Size(196, 26);
+            this.опрограммеToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.опрограммеToolStripMenuItem.Text = "&О программе...";
+            this.опрограммеToolStripMenuItem.Click += new System.EventHandler(this.опрограммеToolStripMenuItem_Click);
             // 
             // openFileDialog1
             // 

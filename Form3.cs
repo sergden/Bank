@@ -21,7 +21,6 @@ namespace Bank
         {
             InitializeComponent();
         }
-        //  ИЗМЕНИТЬ ПУТЬ К ФАЙЛУ!!!!!
         private void выходToolStripMenuItem1_Click(object sender, EventArgs e) //выход из аккаунта и автоматическое сохранение
         {
             Form1 PasswordForm = new Form1();
@@ -285,6 +284,11 @@ namespace Bank
                     }
                 }
             }
+        }
+        private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form5 AboutForm = new Form5();
+            AboutForm.ShowDialog();
         }
     }
 }

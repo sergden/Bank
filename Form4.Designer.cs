@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title7 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title8 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btn_load = new System.Windows.Forms.Button();
@@ -62,27 +62,27 @@
             // 
             // chart2
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea3);
-            legend3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            legend3.IsTextAutoFit = false;
-            legend3.Name = "Legend1";
-            this.chart2.Legends.Add(legend3);
+            chartArea7.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea7);
+            legend7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            legend7.IsTextAutoFit = false;
+            legend7.Name = "Legend1";
+            this.chart2.Legends.Add(legend7);
             this.chart2.Location = new System.Drawing.Point(451, 31);
             this.chart2.Name = "chart2";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            series3.Legend = "Legend1";
-            series3.Name = "Series2";
-            this.chart2.Series.Add(series3);
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            series7.Legend = "Legend1";
+            series7.Name = "Series2";
+            this.chart2.Series.Add(series7);
             this.chart2.Size = new System.Drawing.Size(416, 300);
             this.chart2.TabIndex = 1;
             this.chart2.Text = "chart1";
-            title3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            title3.Name = "Title1";
-            title3.Text = "Возвращенные/невозвращенные кредиты, %";
-            this.chart2.Titles.Add(title3);
+            title7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            title7.Name = "Title1";
+            title7.Text = "Возвращенные/невозвращенные кредиты, %";
+            this.chart2.Titles.Add(title7);
             // 
             // btn_load
             // 
@@ -110,30 +110,31 @@
             this.btn_clear.TabIndex = 3;
             this.btn_clear.Text = "Очистить";
             this.btn_clear.UseVisualStyleBackColor = false;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // chart1
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea4);
-            legend4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            legend4.IsTextAutoFit = false;
-            legend4.Name = "Legend1";
-            this.chart1.Legends.Add(legend4);
+            chartArea8.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea8);
+            legend8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            legend8.IsTextAutoFit = false;
+            legend8.Name = "Legend1";
+            this.chart1.Legends.Add(legend8);
             this.chart1.Location = new System.Drawing.Point(12, 31);
             this.chart1.Name = "chart1";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            series4.Legend = "Legend1";
-            series4.Name = "Series2";
-            this.chart1.Series.Add(series4);
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            series8.Legend = "Legend1";
+            series8.Name = "Series2";
+            this.chart1.Series.Add(series8);
             this.chart1.Size = new System.Drawing.Size(433, 300);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart2";
-            title4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            title4.Name = "Title1";
-            title4.Text = "Возвращенные/невозвращенные кредиты, руб.";
-            this.chart1.Titles.Add(title4);
+            title8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            title8.Name = "Title1";
+            title8.Text = "Возвращенные/невозвращенные кредиты, руб.";
+            this.chart1.Titles.Add(title8);
             // 
             // dgv1
             // 

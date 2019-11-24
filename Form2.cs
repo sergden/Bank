@@ -205,7 +205,7 @@ namespace Bank
         {
             // dataGridView1.RowCount++;
 
-            if (maskedTextBox5.Text == "" || maskedTextBox1.Text == " , ," || maskedTextBox2.Text == "" || maskedTextBox3.Text == "" || maskedTextBox4.Text == "" || maskedTextBox6.Text == "" || Convert.ToInt32(maskedTextBox5.Text)>Convert.ToInt32(maskedTextBox6.Text))
+            if (maskedTextBox5.Text == "" || maskedTextBox1.Text == " , ," || maskedTextBox2.Text == "" || maskedTextBox3.Text == "" || maskedTextBox4.Text == "" || maskedTextBox6.Text == "" || Convert.ToInt32(maskedTextBox5.Text) > Convert.ToInt32(maskedTextBox6.Text))
             {
                 MessageBox.Show("Проверьте введенные данные", "Ошибка ввода");
             }
@@ -261,7 +261,7 @@ namespace Bank
         private void статистикаToolStripMenuItem_Click(object sender, EventArgs e) //открытие окна статистики
         {
             Form4 StatForm = new Form4();
-                StatForm.Show();            
+            StatForm.Show();
         }
         //*****************************************************Выборки*******************************************************************
         private void Button1_Click(object sender, EventArgs e) //кнопка "Выборка | Вкладка 1"
@@ -332,7 +332,6 @@ namespace Bank
                     i_max = i;
                 }
             }
-
             for (i = 0; i < dataGridView1.RowCount; i++)
             {
                 if (Convert.ToInt32(dataGridView1[3, i].Value) < min_vklad)
@@ -369,8 +368,11 @@ namespace Bank
                 }
             }
             textBox4.Text = all_sum_kredit.ToString();
-
-
+        }
+        private void опрограммеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form5 AboutForm = new Form5();
+            AboutForm.ShowDialog();
         }
     }
 }

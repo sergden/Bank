@@ -22,7 +22,7 @@ namespace Bank
         private void закрытьToolStripMenuItem_Click(object sender, EventArgs e) //закрытие формы
         {
             this.Hide();
-        } 
+        }
         private void Form4_Shown(object sender, EventArgs e) //запись в таблицу при загрузке формы_4
         {
             //Чтение из файла
@@ -47,11 +47,9 @@ namespace Bank
 
             }
             myReader.Close();//закрытие чтения
-
             string myStream1 = @"C:\Users\DEN\Documents\VS Projects\Bank\Data\t_vozvr.txt";
             StreamReader myReader1 = new StreamReader(myStream1);
-               sum_pozitiv = Convert.ToInt32(myReader1.ReadToEnd());
-
+            sum_pozitiv = Convert.ToInt32(myReader1.ReadToEnd());
             myReader1.Close();
         }
         private void btn_load_Click(object sender, EventArgs e)
@@ -66,7 +64,7 @@ namespace Bank
 
             //вычисление сколько процентов составляет одно число от другого
             int sum = sum_pozitiv + sum_negativ;
-            double pozitiv = Math.Round(((sum_pozitiv * 1.0) / (sum * 1.0)) * 100); 
+            double pozitiv = Math.Round(((sum_pozitiv * 1.0) / (sum * 1.0)) * 100);
             double negativ = Math.Round(((sum_negativ * 1.0) / (sum * 1.0)) * 100);
 
             //************************************************************диаграмма_1****************
@@ -102,8 +100,8 @@ namespace Bank
         }
         private void btn_clear_Click(object sender, EventArgs e) //очистка диаграмм
         {
-            chart2.Series[0].Points.Clear();
             chart1.Series[0].Points.Clear();
+            chart2.Series[0].Points.Clear();
         }
     }
 }
