@@ -105,7 +105,7 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.Location = new System.Drawing.Point(12, 710);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(185, 29);
+            this.button2.Size = new System.Drawing.Size(47, 29);
             this.button2.TabIndex = 5;
             this.button2.Text = "Регистрация";
             this.button2.UseVisualStyleBackColor = true;
@@ -120,11 +120,10 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(12, 702);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(185, 37);
+            this.button3.Size = new System.Drawing.Size(79, 37);
             this.button3.TabIndex = 6;
             this.button3.Text = "Выход";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Visible = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox1
